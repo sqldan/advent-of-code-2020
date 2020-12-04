@@ -21,4 +21,4 @@ solution1 = count_trees((3, 1))
 print("solution1:", solution1)
 
 solution2 = map(count_trees, ((1, 1), (3,1), (5, 1), (7, 1), (1, 2)))
-print("solution2:", reduce(lambda x, y: x*y, set(solution2)))
+print("solution2:", reduce(lambda x, y: x*y, list(solution2)))

@@ -1,9 +1,8 @@
-joltages = []
+joltages = [0]  # initialize with socket 0
 with open("input10.txt") as f:
     for line in f:
         joltages.append(int(line.strip()))
 
-joltages.append(0)  # socket
 joltages = sorted(joltages)
 joltages.append(joltages[-1] + 3)  # device
 

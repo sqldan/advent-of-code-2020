@@ -20,10 +20,10 @@ def contiguous(numbers, N):
 for i in range(len(numbers)):
     if not issum(numbers[i:preamble + i], numbers[preamble + i]):
         N = numbers[preamble + i]
-        print(N)
         break
+print(N)
 
 for i in range(len(numbers)):
     if answer := contiguous(numbers[i:], N):
-        print(answer)
         break
+print(answer)

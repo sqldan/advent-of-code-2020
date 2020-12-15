@@ -2,7 +2,7 @@ import re
 import math
 re_mem = re.compile("^mem\[(\d+)\] = (\d+)$")
 mem = {}
-with open("2020/input14.txt") as f:
+with open("input14.txt") as f:
     for line in f:
         line = line.strip()
         if line.startswith("mask"):
@@ -17,7 +17,7 @@ with open("2020/input14.txt") as f:
 print(sum(int(v, 2) for v in mem.values()))
 
 mem = {}
-with open("2020/input14.txt") as f:
+with open("input14.txt") as f:
     for line in f:
         line = line.strip()
         if line.startswith("mask"):

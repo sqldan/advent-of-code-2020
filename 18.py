@@ -2,7 +2,7 @@ import re
 from math import prod
 
 lines = []
-with open("2020/input18.txt") as f:
+with open("input18.txt") as f:
     for line in f:
         line = line.strip()
         lines.append(line)

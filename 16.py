@@ -1,6 +1,5 @@
 import re
 from collections import defaultdict
-from pprint import pprint
 
 re_ranges = re.compile("^(.*):.*?(\d+)-(\d+).*?(\d+)-(\d+)$")
 
